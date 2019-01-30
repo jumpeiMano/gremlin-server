@@ -6,7 +6,7 @@ RUN apk update && \
 	update-ca-certificates
 
 # Install the server
-RUN wget -O /gremlin.zip http://mirror.cc.columbia.edu/pub/software/apache/tinkerpop/3.3.4/apache-tinkerpop-gremlin-server-3.3.4-bin.zip && \
+RUN wget -O /gremlin.zip http://mirror.cc.columbia.edu/pub/software/apache/tinkerpop/3.3.5/apache-tinkerpop-gremlin-server-3.3.5-bin.zip && \
 	unzip /gremlin.zip -d /gremlin && \
 	rm /gremlin.zip
 WORKDIR /gremlin/apache-tinkerpop-gremlin-server-3.3.4
