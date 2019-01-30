@@ -17,7 +17,7 @@ RUN mkdir /graph_file
 # Configure gremlin for python
 RUN bin/gremlin-server.sh install org.apache.tinkerpop gremlin-python 3.3.4
 
-EXPOSE 8182
+EXPOSE 8183
 
 # Copy the configuration files
 COPY files .

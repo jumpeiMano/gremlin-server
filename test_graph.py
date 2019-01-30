@@ -11,7 +11,7 @@ from gremlin_python.process.traversal import Cardinality
 statics.load_statics(globals())
 # Initialize the graph and the traversal
 graph = Graph()
-g = graph.traversal().withRemote(DriverRemoteConnection('ws://localhost:8182/gremlin','g'))
+g = graph.traversal().withRemote(DriverRemoteConnection('ws://localhost:8183/gremlin','g'))
 
 
 print('Number of nodes {}, number of edges {}.'.format(g.V().count().next(),g.E().count().next()))
