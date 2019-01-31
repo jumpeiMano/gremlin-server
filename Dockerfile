@@ -9,13 +9,13 @@ RUN apk update && \
 RUN wget -O /gremlin.zip http://mirror.cc.columbia.edu/pub/software/apache/tinkerpop/3.3.5/apache-tinkerpop-gremlin-server-3.3.5-bin.zip && \
 	unzip /gremlin.zip -d /gremlin && \
 	rm /gremlin.zip
-WORKDIR /gremlin/apache-tinkerpop-gremlin-server-3.3.4
+WORKDIR /gremlin/apache-tinkerpop-gremlin-server-3.3.5
 
 # Place where the graph is saved, see gremlin-graph.properties
 RUN mkdir /graph_file
 
 # Configure gremlin for python
-RUN bin/gremlin-server.sh install org.apache.tinkerpop gremlin-python 3.3.4
+RUN bin/gremlin-server.sh install org.apache.tinkerpop gremlin-python 3.3.5
 
 EXPOSE 8183
 
